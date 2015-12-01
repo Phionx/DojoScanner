@@ -1,0 +1,5 @@
+function foo() {
+    cat "$1" | sort -r | uniq
+    cat "$1" | sort -r | uniq | cat > tmp
+    mv tmp "$1"
+}
